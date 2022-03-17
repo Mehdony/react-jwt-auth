@@ -7,7 +7,7 @@ export default class Home extends Component {
     super(props);
 
     this.state = {
-      content: ""
+      content: []
     };
   }
 
@@ -30,10 +30,11 @@ export default class Home extends Component {
   }
 
   render() {
+    console.log(this.state);
     return (
       <div className="container">
         <header className="jumbotron">
-          <h3>{this.state.content}</h3>
+          {/* {this.state.content.map( data => console.log(data) )} */}
         </header>
       </div>
     );
